@@ -1,0 +1,117 @@
+# Kotlin-specific
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+
+# Gradle
+.gradle/
+build/
+!gradle-wrapper.jar
+.gradle-cache/
+out/
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+.idea_modules/
+.idea/
+*.ipr
+*.iws
+.idea/assetWizardSettings.xml
+.idea/compiler.xml
+.idea/copyright/
+.idea/dataSources/
+.idea/dataSources.local.xml
+.idea/datasources/
+.idea/dataSources.xml
+.idea/externalDependencies.xml
+.idea/gradle.xml
+.idea/jarRepositories.xml
+.idea/jsLibraryMappings.xml
+.idea/libraries/
+.idea/misc.xml
+.idea/modules.xml
+.idea/scopes/
+.idea/tasks.xml
+.idea/vcs.xml
+.idea/workspace.xml
+.idea/studio.exe.vmoptions
+.idea/studio.vmoptions
+.idea/dictionaries
+.idea/httpRequests
+.idea/markdown-navigator.xml
+.idea/maven.xml
+.idea/mybatis.xml
+.idea/nodejs.xml
+.idea/inspectionProfiles
+.idea/sonarlint
+.idea/springboot.xml
+.idea/kotlinc.xml
+.idea/libraries
+.idea/codeStyles
+
+# Eclipse
+.project
+.classpath
+.settings/
+bin/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+*.swp
+.swp
+.swo
+.directory
+
+# Logs
+logs/
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# Application-specific
+.vscode/
+.vscode/settings.json
+.env
+
+# Exclude root project files
+gradle.properties
+gradle-local.properties
+
+# Local Gradle wrapper properties file (if it is not intended to be shared)
+gradle-wrapper.properties
+
+# Local JetBrains IDE config
+.idea/
+
+# Ignore other operating system files
+.DS_Store
+Thumbs.db
