@@ -3,10 +3,12 @@ package com.gojiraf.androidnativeclientapp
 import android.content.Context
 import android.net.Uri
 import android.os.Bundle
+import android.graphics.Color
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.browser.customtabs.CustomTabsIntent
+import androidx.browser.customtabs.CustomTabColorSchemeParams
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Button
@@ -50,20 +52,17 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 
 
 fun openCustomTab(context: Context, url: String) {
-    val builder = CustomTabsIntent.Builder()
-    builder.setToolbarColor(ContextCompat.getColor(context, R.color.colorPrimary))
-    builder.addDefaultShareMenuItem()
-    builder.setShowTitle(true)
-    builder.setStartAnimations(context, android.R.anim.slide_in_left, android.R.anim.slide_out_right)
-    builder.setExitAnimations(context, android.R.anim.slide_in_left, android.R.anim.slide_out_right)
+    // Create a CustomTabColorSchemeParams to set the toolbar color
+    val colorSchemeParams = CustomTabColorSchemeParams.Builder()
+        .setToolbarColor(Color.BLACK) // Set the toolbar color to black
+        .build()
 
-    // Agregar icono de cierre personalizado
-    val bitmap = BitmapFactory.decodeResource(context.resources, R.drawable.ic_arrow_back)
-    builder.setCloseButtonIcon(bitmap)
+    // Build the CustomTabsIntent with the color scheme
+    val customTabsIntent = CustomTabsIntent.Builder()
+        .setDefaultColorSchemeParams(colorSchemeParams)
+        .build()
 
-    val customTabsIntent = builder.build()
-    val packageName = "com.android.chrome"
-    customTabsIntent.intent.setPackage(packageName)
+    // Launch the Custom Tab
     customTabsIntent.launchUrl(context, Uri.parse(url))
 }
 
