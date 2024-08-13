@@ -59,7 +59,10 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
-    implementation(libs.androidx.browser) // Nueva dependencia para Custom Tabs
+    implementation(libs.androidx.browser) // Dep para Custom Tabs
+    implementation(libs.android.browser.helper) // Dep para TWA
+    implementation(libs.androidx.appcompat) // Dep para TWA
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
