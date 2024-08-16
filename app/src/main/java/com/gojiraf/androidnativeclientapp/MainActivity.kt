@@ -52,7 +52,7 @@ class MainActivity : ComponentActivity() {
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     val context = LocalContext.current
     Button(onClick = {
-        openCustomTab(context, "https://video-commerce.vercel.app/company/just?category=belleza")
+        openCustomTab(context, "https://videocommerce-staging.gojiraf.ai/company/liverpool")
     }, modifier = modifier) {
         Text(text = "Open Custom Tab")
     }

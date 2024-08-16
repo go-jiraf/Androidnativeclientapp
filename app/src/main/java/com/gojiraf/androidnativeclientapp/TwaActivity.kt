@@ -46,7 +46,8 @@ class TwaActivity : AppCompatActivity() {
     }
 
     private fun launchTwa() {
-        val url = Uri.parse("https://video-commerce.vercel.app/company/just?category=belleza")
+        val url = Uri.parse("https://videocommerce-staging.gojiraf.ai/company/liverpool")
+        //val url = Uri.parse("https://videocommerce.gojiraf.ai/company/liverpool")
 
         // Asegurarse de que la sesión no sea nula antes de continuar
         val session = customTabsSession
